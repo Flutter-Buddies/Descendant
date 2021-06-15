@@ -1,0 +1,91 @@
+{
+       "columns": 5,
+       "image": "TS_Dirt.png",
+       "imageheight": 64,
+       "imagewidth": 80,
+       "margin": 0,
+       "name": "Dirt",
+       "spacing": 0,
+       "tilecount": 20,
+       "tiledversion": "1.7.0",
+       "tileheight": 16,
+       "tiles": [
+              {
+                     "id": 2,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "id": 2,
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 16,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 16,
+                                          "x": 0,
+                                          "y": 0
+                                   },
+                                   {
+                                          "height": 16,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 16,
+                                          "x": 0,
+                                          "y": 0
+                                   },
+                                   {
+                                          "height": 14.0351,
+                                          "id": 4,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 12.9718,
+                                          "x": 1.06326,
+                                          "y": 1.02073
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 4,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "id": 2,
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 13.916,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 14.0436,
+                                          "x": 1.02073,
+                                          "y": 1.10579
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              }
+       ],
+       "tilewidth": 16,
+       "type": "tileset",
+       "version": "1.6"
+}

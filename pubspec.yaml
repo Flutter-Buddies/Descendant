@@ -27,4 +27,21 @@ flutter:
   assets:
     - assets/
     - assets/images/
-    - assets/images/player/
+    - assets/images/items/
+    - assets/images/female/
+    - assets/images/female/Idle/
+    - assets/images/female/Walk/
+    - assets/images/female/Attack/
+    - assets/images/female/Shield/
+    - assets/images/male/
+    - assets/images/male/Idle/
+    - assets/images/male/Walk/
+    - assets/images/male/Attack/
+    - assets/images/male/Shield/
+    - assets/images/tiled/
+    - assets/images/tiled/map.json
+    - assets/images/tiled/Dirt.json
+    - assets/images/tiled/DirtPit.json
+    - assets/images/tiled/DirtWater.json
+    - assets/images/tiled/Pit.json
+    - assets/images/tiled/Water.json

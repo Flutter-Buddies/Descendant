@@ -1,7 +1,7 @@
 import 'dart:async' as async;
 import 'package:bonfire/bonfire.dart';
 import 'package:project_fireborn/game.dart';
-import 'package:project_fireborn/sprites/player.dart';
+import 'package:project_fireborn/sprites/male.dart';
 import 'package:flutter/material.dart';
 import 'package:project_fireborn/util/custom_sprite_animation_widget.dart';
 

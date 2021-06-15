@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:bonfire/bonfire.dart';
-import 'package:project_fireborn/player/knight.dart';
+import 'package:project_fireborn/player/male.dart';
 import 'package:flutter/material.dart';
 
 class BarLifeComponent extends InterfaceComponent {
@@ -26,10 +26,10 @@ class BarLifeComponent extends InterfaceComponent {
   @override
   void update(double t) {
     if (this.gameRef.player != null) {
-      // life = this.gameRef.player.life;
-      // maxLife = this.gameRef.player.maxLife;
-      if (this.gameRef.player is Knight) {
-        stamina = (this.gameRef.player as Knight).stamina;
+      life = this.gameRef.player!.life;
+      maxLife = this.gameRef.player!.maxLife;
+      if (this.gameRef.player is Male) {
+        stamina = (this.gameRef.player as Male).stamina;
       }
     }
     super.update(t);
@@ -51,7 +51,7 @@ class BarLifeComponent extends InterfaceComponent {
         Offset(xBar, yBar),
         Offset(xBar + widthBar, yBar),
         Paint()
-          // ..color = Colors.blueGrey[800]
+          ..color = Colors.blueGrey
           ..strokeWidth = strokeWidth
           ..style = PaintingStyle.fill);
 

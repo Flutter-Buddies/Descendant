@@ -1,9 +1,10 @@
 import 'dart:math';
 
 import 'package:bonfire/bonfire.dart';
-import 'package:project_fireborn/interface/knight_interface.dart';
+import 'package:project_fireborn/interface/player_interface.dart';
+// import 'package:project_fireborn/items/key.dart';
 import 'package:project_fireborn/main.dart';
-import 'package:project_fireborn/player/knight.dart';
+import 'package:project_fireborn/player/male.dart';
 import 'package:flutter/material.dart';
 
 class Game extends StatefulWidget {
@@ -56,7 +57,7 @@ class _GameState extends State<Game>
   @override
   Widget build(BuildContext context) {
     Size sizeScreen = MediaQuery.of(context).size;
-    tileSize = max(sizeScreen.height, sizeScreen.width) / 15;
+    tileSize = max(sizeScreen.height, sizeScreen.width) / 32;
 
     return Material(
       color: Colors.transparent,
@@ -86,30 +87,30 @@ class _GameState extends State<Game>
             // )
           ],
         ),
-        player: Knight(
+        player: Male(
           initPosition: Vector2(2 * tileSize, 3 * tileSize),
         ),
         map: TiledWorldMap(
           'tiled/map.json',
           forceTileSize: Size(tileSize, tileSize),
-          objectsBuilder: {
-            // 'door': (p) => Door(p.position, p.size),
-            // 'torch': (p) => Torch(p.position),
-            // 'potion': (p) => PotionLife(p.position, 30),
-            // 'wizard': (p) => WizardNPC(p.position),
-            // 'spikes': (p) => Spikes(p.position),
-            // 'key': (p) => DoorKey(p.position),
-            // 'kid': (p) => Kid(p.position),
-            // 'boss': (p) => Boss(p.position),
-            // 'goblin': (p) => Goblin(p.position),
-            // 'imp': (p) => Imp(p.position),
-            // 'mini_boss': (p) => MiniBoss(p.position),
-            // 'torch_empty': (p) => Torch(p.position, empty: true),
-          },
+          // objectsBuilder: {
+          // 'door': (p) => Door(p.position, p.size),
+          // 'torch': (p) => Torch(p.position),
+          // 'potion': (p) => PotionLife(p.position, 30),
+          // 'wizard': (p) => WizardNPC(p.position),
+          // 'spikes': (p) => Spikes(p.position),
+          // 'key': (p) => DoorKey(p.position),
+          // 'kid': (p) => Kid(p.position),
+          // 'boss': (p) => Boss(p.position),
+          // 'goblin': (p) => Goblin(p.position),
+          // 'imp': (p) => Imp(p.position),
+          // 'mini_boss': (p) => MiniBoss(p.position),
+          // 'torch_empty': (p) => Torch(p.position, empty: true),
+          // },
         ),
-        interface: KnightInterface(),
+        interface: PlayerInterface(),
         lightingColorGame: Colors.black.withOpacity(0.6),
-        // background: BackgroundColorGame(Colors.grey[900]),
+        background: BackgroundColorGame(Colors.grey),
         progress: Center(
           child: Text(
             "Loading...",
