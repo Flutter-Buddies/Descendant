@@ -88,7 +88,7 @@ class _GameState extends State<Game>
           ],
         ),
         player: Male(
-          initPosition: Vector2(2 * tileSize, 3 * tileSize),
+          initPosition: Vector2(7 * tileSize, 8 * tileSize),
         ),
         map: TiledWorldMap(
           'tiled/map.json',
