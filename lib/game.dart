@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:bonfire/bonfire.dart';
 import 'package:project_fireborn/interface/player_interface.dart';
-// import 'package:project_fireborn/items/key.dart';
+import 'package:project_fireborn/items/key.dart';
 import 'package:project_fireborn/main.dart';
 import 'package:project_fireborn/player/male.dart';
 import 'package:flutter/material.dart';
@@ -93,20 +93,20 @@ class _GameState extends State<Game>
         map: TiledWorldMap(
           'tiled/map.json',
           forceTileSize: Size(tileSize, tileSize),
-          // objectsBuilder: {
+          objectsBuilder: {
           // 'door': (p) => Door(p.position, p.size),
           // 'torch': (p) => Torch(p.position),
           // 'potion': (p) => PotionLife(p.position, 30),
           // 'wizard': (p) => WizardNPC(p.position),
           // 'spikes': (p) => Spikes(p.position),
-          // 'key': (p) => DoorKey(p.position),
+          'key': (p) => DoorKey(p.position),
           // 'kid': (p) => Kid(p.position),
           // 'boss': (p) => Boss(p.position),
           // 'goblin': (p) => Goblin(p.position),
           // 'imp': (p) => Imp(p.position),
           // 'mini_boss': (p) => MiniBoss(p.position),
           // 'torch_empty': (p) => Torch(p.position, empty: true),
-          // },
+          },
         ),
         interface: PlayerInterface(),
         lightingColorGame: Colors.black.withOpacity(0.6),

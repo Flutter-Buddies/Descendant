@@ -6,13 +6,14 @@ import 'package:project_fireborn/main.dart';
 // import 'package:project_fireborn/util/game_sprite_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:project_fireborn/sprites/male.dart';
+import 'package:project_fireborn/util/functions.dart';
 
 class Male extends SimplePlayer with Lighting, ObjectCollision {
   final Vector2 initPosition;
   double attack = 25;
   double stamina = 100;
   double initSpeed = tileSize / 0.25;
-  // late async.Timer _timerStamina;
+  // late async.Timer _timerStam
   bool containKey = false;
   bool showObserveEnemy = false;
 
@@ -26,20 +27,20 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
           life: 200,
           speed: tileSize / 0.25,
         ) {
-    print(height);
-    // setupCollision(
-    //   CollisionConfig(
-    //     collisions: [
-    //       CollisionArea.rectangle(
-    //         size: Size(valueByTileSize(8), valueByTileSize(8)),
-    //         align: Vector2(
-    //           valueByTileSize(4),
-    //           valueByTileSize(8),
-    //         ),
-    //       ),
-    //     ],
-    //   ),
-    // );
+    // print(height);
+    setupCollision(
+      CollisionConfig(
+        collisions: [
+          CollisionArea.rectangle(
+            size: Size(valueByTileSize(8), valueByTileSize(8)),
+            align: Vector2(
+              valueByTileSize(4),
+              valueByTileSize(8),
+            ),
+          ),
+        ],
+      ),
+    );
 
     setupLighting(
       LightingConfig(
@@ -59,7 +60,7 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
   @override
   void joystickAction(JoystickActionEvent event) {
     if (event.id == 0 && event.event == ActionEvent.DOWN) {
-      // actionAttack();
+      _addAttackAnimation();
     }
 
     if (event.id == 1 && event.event == ActionEvent.DOWN) {
@@ -84,24 +85,54 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
   //   );
   //   super.die();
   // }
+void _addAttackAnimation() {
+    Future<SpriteAnimation> newAnimation;
+    switch (lastDirection) {
+      case Direction.left:
+        newAnimation = PlayerSpriteSheet.attackLeft();
+        break;
+      case Direction.right:
+        newAnimation = PlayerSpriteSheet.attackRight();
+        break;
+      case Direction.up:
+        newAnimation = PlayerSpriteSheet.attackTop();
+        break;
+      case Direction.down:
+        newAnimation = PlayerSpriteSheet.attackBottom();
+        break;
+      case Direction.upLeft:
+        newAnimation = PlayerSpriteSheet.attackTop();
+        break;
+      case Direction.upRight:
+        newAnimation = PlayerSpriteSheet.attackTop();
+        break;
+      case Direction.downLeft:
+        newAnimation = PlayerSpriteSheet.attackBottom();
+        break;
+      case Direction.downRight:
+        newAnimation = PlayerSpriteSheet.attackBottom();
+        break;
+    }
+    animation.playOnce(newAnimation, position);
+  }
 
-  // void actionAttack() {
-  //   if (stamina < 15) {
-  //     return;
-  //   }
+  void actionAttack() {
+    if (stamina < 15) {
+      return;
+    }
 
-  // Sounds.attackPlayerMelee();
-  // decrementStamina(15);
-  // this.simpleAttackMelee(
-  //   damage: attack,
-  // animationBottom: PlayerSpriteSheet.attackEffectBottom(),
-  // animationLeft: PlayerSpriteSheet.attackEffectLeft(),
-  // animationRight: PlayerSpriteSheet.attackEffectRight(),
-  // animationTop: PlayerSpriteSheet.attackEffectTop(),
-  //     height: tileSize,
-  //     width: tileSize,
-  //   );
-  // }
+    // Sounds.attackPlayerMelee();
+    // decrementStamina(15);
+    this.simpleAttackMelee(
+      damage: attack,
+      animationBottom: PlayerSpriteSheet.attackBottom(),
+      animationLeft: PlayerSpriteSheet.attackLeft(),
+      animationRight: PlayerSpriteSheet.attackRight(),
+      animationTop: PlayerSpriteSheet.attackTop(),
+      height: tileSize,
+      width: tileSize,
+    );
+  }
 
   // void actionAttackRange() {
   //   if (stamina < 10) {

@@ -9,6 +9,39 @@ class PlayerSpriteSheet {
           textureSize: Vector2(16, 16),
         ),
       );
+static Future<SpriteAnimation> attackBottom() => SpriteAnimation.load(
+        'male/Attack/Sword/Char_atk_down.png',
+        SpriteAnimationData.sequenced(
+          amount: 6,
+          stepTime: 0.1,
+          textureSize: Vector2(22, 23),
+        ),
+      );
+
+  static Future<SpriteAnimation> attackLeft() => SpriteAnimation.load(
+        'male/Attack/Sword/Char_atk_left.png',
+        SpriteAnimationData.sequenced(
+          amount: 6,
+          stepTime: 0.1,
+          textureSize: Vector2(16, 21),
+        ),
+      );
+  static Future<SpriteAnimation> attackRight() => SpriteAnimation.load(
+        'male/Attack/Sword/Char_atk_right.png',
+        SpriteAnimationData.sequenced(
+          amount: 6,
+          stepTime: 0.1,
+          textureSize: Vector2(16, 21),
+        ),
+      );
+  static Future<SpriteAnimation> attackTop() => SpriteAnimation.load(
+        'male/Attack/Sword/Char_atk_up.png',
+        SpriteAnimationData.sequenced(
+          amount: 6,
+          stepTime: 0.1,
+          textureSize: Vector2(22, 23),
+        ),
+      );
 
   static SimpleDirectionAnimation playerAnimations() =>
       SimpleDirectionAnimation(

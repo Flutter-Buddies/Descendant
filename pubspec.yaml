@@ -32,10 +32,14 @@ flutter:
     - assets/images/female/Idle/
     - assets/images/female/Walk/
     - assets/images/female/Attack/
+    - assets/images/female/Attack/Sword/
+    - assets/images/female/Attack/Bow/
     - assets/images/female/Shield/
     - assets/images/male/
     - assets/images/male/Idle/
     - assets/images/male/Walk/
     - assets/images/male/Attack/
+    - assets/images/male/Attack/Sword/
+    - assets/images/male/Attack/Bow/
     - assets/images/male/Shield/
     - assets/images/tiled/
