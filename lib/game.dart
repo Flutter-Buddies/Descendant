@@ -57,7 +57,7 @@ class _GameState extends State<Game>
   @override
   Widget build(BuildContext context) {
     Size sizeScreen = MediaQuery.of(context).size;
-    tileSize = max(sizeScreen.height, sizeScreen.width) / 32;
+    tileSize = max(sizeScreen.height, sizeScreen.width) / 16;
 
     return Material(
       color: Colors.transparent,

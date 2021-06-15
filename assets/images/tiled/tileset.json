@@ -1,0 +1,2574 @@
+{
+       "columns": 15,
+       "image": "tileset.png",
+       "imageheight": 128,
+       "imagewidth": 240,
+       "margin": 0,
+       "name": "tileset",
+       "spacing": 0,
+       "tilecount": 120,
+       "tileheight": 16,
+       "tiles": [
+              {
+                     "id": 2,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 13.9365464815499,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 13.9196536979359,
+                                          "x": 1.06424536768199,
+                                          "y": 0.979781449611994
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 4,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 13.9703320487779,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 13.9872248323919,
+                                          "x": 0.979781449611994,
+                                          "y": 0.996674233225994
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 20,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 7.01050519980996,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.07807633426595,
+                                          "x": 8.95317531541994,
+                                          "y": 8.95317531541994
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 21,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.01383096658396,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 16.0143588660719,
+                                          "x": -0.0168927836139999,
+                                          "y": 10.0174206831019
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 22,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.97671963258196,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.01050519980996,
+                                          "x": 0,
+                                          "y": 9.02074644987594
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 23,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 13.9703320487779,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 13.9872248323919,
+                                          "x": 0.996674233225994,
+                                          "y": 0.945995882383993
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 25,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 7.01050519980996,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.02739798342395,
+                                          "x": 8.98696088264794,
+                                          "y": 9.00385366626194
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 26,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.95982684896796,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 15.9974660824579,
+                                          "x": 0.0168927836140007,
+                                          "y": 9.03763923348994
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 27,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.99361241619596,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.99361241619596,
+                                          "x": 0,
+                                          "y": 9.00385366626194
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 28,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 13.9365464815499,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 14.0379031832339,
+                                          "x": 0.962888665997994,
+                                          "y": 1.01356701683999
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 35,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 16.0143588660719,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.01050519980996,
+                                          "x": 8.98696088264794,
+                                          "y": 0.0168927836139999
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 36,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 16,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 16,
+                                          "x": 0,
+                                          "y": 0
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 37,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 16.0312516496859,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.99361241619596,
+                                          "x": -0.0168927836139998,
+                                          "y": -0.0168927836139999
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 38,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 7.92271551496595,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 15.9974660824579,
+                                          "x": 0,
+                                          "y": 0
+                                   },
+                                   {
+                                          "height": 8.00717943303595,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.04429076703796,
+                                          "x": -0.0337855672279996,
+                                          "y": 7.93960829857995
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 39,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 7.92271551496595,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 15.9805732988439,
+                                          "x": 0.0168927836139999,
+                                          "y": 0.0337855672279996
+                                   },
+                                   {
+                                          "height": 7.99028664942195,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.04429076703796,
+                                          "x": 8.98696088264794,
+                                          "y": 7.99028664942195
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 40,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 16.0143588660719,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.97671963258196,
+                                          "x": 9.02074644987594,
+                                          "y": 0.0168927836139999
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 41,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 16,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 16,
+                                          "x": 0,
+                                          "y": 0
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 42,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 15.9130021643879,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.94293406535396,
+                                          "x": 0.0168927836139998,
+                                          "y": 0.0337855672279998
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 43,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.99361241619596,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 16.0312516496859,
+                                          "x": -0.0506783508419986,
+                                          "y": 0.0168927836139998
+                                   },
+                                   {
+                                          "height": 8.98696088264794,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.99361241619596,
+                                          "x": -0.0168927836139998,
+                                          "y": 7.04429076703796
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 44,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.97671963258196,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 15.9636805152299,
+                                          "x": 0.0168927836139999,
+                                          "y": 0.0168927836139998
+                                   },
+                                   {
+                                          "height": 8.98696088264794,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.95982684896796,
+                                          "x": 9.02074644987594,
+                                          "y": 7.01050519980996
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 50,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 7.01050519980996,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.02739798342396,
+                                          "x": 9.00385366626194,
+                                          "y": 0
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 51,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.94293406535396,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 16.0143588660719,
+                                          "x": -0.0168927836139989,
+                                          "y": 0
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 52,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.97671963258196,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.97671963258196,
+                                          "x": -0.0168927836139999,
+                                          "y": -0.0168927836139999
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 53,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 15.9974660824579,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.02739798342396,
+                                          "x": -0.0168927836139998,
+                                          "y": 0.0168927836139999
+                                   },
+                                   {
+                                          "height": 7.07807633426596,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 8.95317531541994,
+                                          "x": 7.04429076703796,
+                                          "y": 8.97006809903394
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 54,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 16.0143588660719,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.01050519980996,
+                                          "x": 9.02074644987594,
+                                          "y": 0.0168927836139999
+                                   },
+                                   {
+                                          "height": 7.07807633426595,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 9.02074644987594,
+                                          "x": -0.0168927836139999,
+                                          "y": 8.95317531541994
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 55,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.97671963258196,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.94293406535396,
+                                          "x": 9.02074644987594,
+                                          "y": -0.0337855672279998
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 56,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.87536293089796,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 16.0143588660719,
+                                          "x": -0.0168927836139989,
+                                          "y": 0.0675711344559993
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 57,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.97671963258196,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.02739798342396,
+                                          "x": -0.0337855672279998,
+                                          "y": 0
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 58,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 15.8454310299319,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.99361241619596,
+                                          "x": -0.0168927836139998,
+                                          "y": 0.0844639180699995
+                                   },
+                                   {
+                                          "height": 6.99361241619596,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 8.97006809903394,
+                                          "x": 6.99361241619596,
+                                          "y": 8.98696088264794
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 59,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 16.0143588660719,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.94293406535396,
+                                          "x": 9.03763923348994,
+                                          "y": -0.0506783508419997
+                                   },
+                                   {
+                                          "height": 6.99361241619596,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 9.00385366626194,
+                                          "x": 0.0168927836139999,
+                                          "y": 9.00385366626194
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 75,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.95982684896796,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.97671963258196,
+                                          "x": 9.00385366626194,
+                                          "y": 9.00385366626194
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 76,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 7.02739798342395,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 16.0143588660719,
+                                          "x": 0,
+                                          "y": 8.98696088264794
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 77,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.94293406535396,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.97671963258196,
+                                          "x": -0.0168927836139998,
+                                          "y": 9.02074644987594
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 78,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 13.8689753470939,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 13.9365464815499,
+                                          "x": 0.996674233225994,
+                                          "y": 1.04735258406799
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 80,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 7.01050519980996,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.99361241619596,
+                                          "x": 8.98696088264794,
+                                          "y": 8.97006809903394
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 81,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.99361241619596,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 15.9805732988439,
+                                          "x": -0.0168927836140007,
+                                          "y": 8.98696088264794
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 82,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 7.01050519980996,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.02739798342396,
+                                          "x": -0.0168927836139999,
+                                          "y": 8.97006809903394
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 83,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 14.0041176160059,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 13.9703320487779,
+                                          "x": 0.996674233225994,
+                                          "y": 0.996674233225994
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 90,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 15.9805732988439,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.02739798342396,
+                                          "x": 9.00385366626194,
+                                          "y": 0.0168927836139999
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 91,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 16,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 16,
+                                          "x": 0,
+                                          "y": 0
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 92,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 15.9974660824579,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.95982684896796,
+                                          "x": 0,
+                                          "y": 0.0168927836139999
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 93,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 15.9805732988439,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.99361241619596,
+                                          "x": -0.0168927836139998,
+                                          "y": 0
+                                   },
+                                   {
+                                          "height": 6.99361241619596,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 9.03763923348994,
+                                          "x": 6.97671963258196,
+                                          "y": -0.0168927836139998
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 94,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.97671963258196,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 16.0312516496859,
+                                          "x": -0.0168927836139999,
+                                          "y": 0.0168927836139998
+                                   },
+                                   {
+                                          "height": 9.00385366626194,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.97671963258196,
+                                          "x": 9.05453201710394,
+                                          "y": 7.02739798342396
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 95,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 16.0143588660719,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.01050519980996,
+                                          "x": 8.97006809903394,
+                                          "y": -0.0168927836139999
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 96,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 16,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 16,
+                                          "x": 0,
+                                          "y": 0
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 97,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 15.9467877316159,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.01050519980996,
+                                          "x": -0.0168927836139998,
+                                          "y": 0.0337855672279998
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 98,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 15.9636805152299,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.07807633426596,
+                                          "x": -0.0337855672279996,
+                                          "y": 0
+                                   },
+                                   {
+                                          "height": 7.97339386580795,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 8.95317531541994,
+                                          "x": 7.02739798342396,
+                                          "y": 0
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 99,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 8.04096500026395,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 15.9636805152299,
+                                          "x": 0.0168927836139999,
+                                          "y": -0.0337855672279996
+                                   },
+                                   {
+                                          "height": 7.99028664942195,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.01050519980996,
+                                          "x": 9.00385366626194,
+                                          "y": 7.97339386580795
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 105,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.95982684896796,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.99361241619595,
+                                          "x": 9.02074644987594,
+                                          "y": 0.0168927836139999
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 106,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.94293406535396,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 16.0143588660719,
+                                          "x": 0.0168927836139999,
+                                          "y": 0
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 107,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 7.01050519980996,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.97671963258196,
+                                          "x": 0,
+                                          "y": -0.0168927836139998
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 108,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 15.9974660824579,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.01050519980996,
+                                          "x": -0.0337855672279996,
+                                          "y": 0.0337855672279998
+                                   },
+                                   {
+                                          "height": 7.01050519980996,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 9.02074644987594,
+                                          "x": 6.99361241619596,
+                                          "y": 9.02074644987594
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 109,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 16.0312516496859,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.04429076703796,
+                                          "x": 9.00385366626194,
+                                          "y": 0
+                                   },
+                                   {
+                                          "height": 6.97671963258196,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 8.98696088264794,
+                                          "x": 0,
+                                          "y": 9.00385366626194
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 110,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 7.99028664942195,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.01050519980996,
+                                          "x": 9.02074644987594,
+                                          "y": -0.0168927836139999
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 111,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 7.97339386580795,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 15.9636805152299,
+                                          "x": -0.0168927836139999,
+                                          "y": 0.0168927836139998
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 112,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 8.04096500026395,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.94293406535396,
+                                          "x": 0.0168927836139999,
+                                          "y": -0.0168927836139999
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 113,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 15.9467877316159,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 7.04429076703796,
+                                          "x": -0.0168927836139998,
+                                          "y": 0.0337855672279998
+                                   },
+                                   {
+                                          "height": 7.06118355065195,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 8.93628253180594,
+                                          "x": 7.04429076703796,
+                                          "y": 8.95317531541994
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              },
+              {
+                     "id": 114,
+                     "objectgroup": {
+                            "draworder": "index",
+                            "name": "",
+                            "objects": [
+                                   {
+                                          "height": 6.99361241619596,
+                                          "id": 1,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 15.9974660824579,
+                                          "x": 0,
+                                          "y": 9.00385366626194
+                                   },
+                                   {
+                                          "height": 9.03763923348994,
+                                          "id": 2,
+                                          "name": "",
+                                          "rotation": 0,
+                                          "type": "",
+                                          "visible": true,
+                                          "width": 6.95982684896796,
+                                          "x": 9.02074644987594,
+                                          "y": -0.0168927836139999
+                                   }
+                            ],
+                            "opacity": 1,
+                            "type": "objectgroup",
+                            "visible": true,
+                            "x": 0,
+                            "y": 0
+                     }
+              }
+       ],
+       "tilewidth": 16,
+       "type": "tileset",
+       "version": 1.6,
+       "wangsets": [
+              {
+                     "colors": [
+                            {
+                                   "color": "#00ff00",
+                                   "name": "Grass",
+                                   "probability": 1,
+                                   "tile": 64
+                            },
+                            {
+                                   "color": "#0000ff",
+                                   "name": "Dirt",
+                                   "probability": 1,
+                                   "tile": 8
+                            },
+                            {
+                                   "color": "#ff7700",
+                                   "name": "Water",
+                                   "probability": 1,
+                                   "tile": 11
+                            },
+                            {
+                                   "color": "#00e9ff",
+                                   "name": "Hole",
+                                   "probability": 1,
+                                   "tile": 91
+                            }
+                     ],
+                     "name": "Land",
+                     "tile": 33,
+                     "type": "mixed",
+                     "wangtiles": [
+                            {
+                                   "tileid": 1,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 12,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 15,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          2,
+                                          1,
+                                          2,
+                                          1,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 16,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          2,
+                                          1,
+                                          1,
+                                          1,
+                                          2,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 17,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          2,
+                                          1,
+                                          2,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 20,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          2,
+                                          4,
+                                          2,
+                                          2,
+                                          2,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 21,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          2,
+                                          4,
+                                          4,
+                                          4,
+                                          2,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 22,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          4,
+                                          2,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 25,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          3,
+                                          1,
+                                          3,
+                                          1,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 26,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          3,
+                                          1,
+                                          1,
+                                          1,
+                                          3,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 27,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          3,
+                                          1,
+                                          3,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 30,
+                                   "wangid": [
+                                          2,
+                                          1,
+                                          1,
+                                          1,
+                                          2,
+                                          1,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 31,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 32,
+                                   "wangid": [
+                                          2,
+                                          1,
+                                          1,
+                                          1,
+                                          2,
+                                          1,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 33,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          1,
+                                          1,
+                                          1,
+                                          2,
+                                          2,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 34,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          1,
+                                          1,
+                                          1,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 35,
+                                   "wangid": [
+                                          2,
+                                          4,
+                                          4,
+                                          4,
+                                          2,
+                                          2,
+                                          2,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 36,
+                                   "wangid": [
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4
+                                   ]
+                            },
+                            {
+                                   "tileid": 37,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          4,
+                                          4,
+                                          4
+                                   ]
+                            },
+                            {
+                                   "tileid": 38,
+                                   "wangid": [
+                                          4,
+                                          4,
+                                          4,
+                                          2,
+                                          4,
+                                          4,
+                                          4,
+                                          4
+                                   ]
+                            },
+                            {
+                                   "tileid": 39,
+                                   "wangid": [
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          2,
+                                          4,
+                                          4
+                                   ]
+                            },
+                            {
+                                   "tileid": 40,
+                                   "wangid": [
+                                          3,
+                                          1,
+                                          1,
+                                          1,
+                                          3,
+                                          1,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 41,
+                                   "wangid": [
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3
+                                   ]
+                            },
+                            {
+                                   "tileid": 42,
+                                   "wangid": [
+                                          3,
+                                          1,
+                                          1,
+                                          1,
+                                          3,
+                                          1,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 43,
+                                   "wangid": [
+                                          3,
+                                          3,
+                                          3,
+                                          1,
+                                          3,
+                                          3,
+                                          3,
+                                          3
+                                   ]
+                            },
+                            {
+                                   "tileid": 44,
+                                   "wangid": [
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          1,
+                                          3,
+                                          3
+                                   ]
+                            },
+                            {
+                                   "tileid": 45,
+                                   "wangid": [
+                                          2,
+                                          1,
+                                          2,
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 46,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          2,
+                                          1,
+                                          1,
+                                          1,
+                                          2,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 47,
+                                   "wangid": [
+                                          2,
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          2,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 48,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          1,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 49,
+                                   "wangid": [
+                                          1,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 50,
+                                   "wangid": [
+                                          2,
+                                          4,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 51,
+                                   "wangid": [
+                                          4,
+                                          4,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          4
+                                   ]
+                            },
+                            {
+                                   "tileid": 52,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          4
+                                   ]
+                            },
+                            {
+                                   "tileid": 53,
+                                   "wangid": [
+                                          4,
+                                          2,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4
+                                   ]
+                            },
+                            {
+                                   "tileid": 54,
+                                   "wangid": [
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 55,
+                                   "wangid": [
+                                          3,
+                                          1,
+                                          3,
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 56,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          3,
+                                          1,
+                                          1,
+                                          1,
+                                          3,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 57,
+                                   "wangid": [
+                                          3,
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          3,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 58,
+                                   "wangid": [
+                                          3,
+                                          1,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3
+                                   ]
+                            },
+                            {
+                                   "tileid": 59,
+                                   "wangid": [
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 61,
+                                   "wangid": [
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4
+                                   ]
+                            },
+                            {
+                                   "tileid": 66,
+                                   "wangid": [
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3
+                                   ]
+                            },
+                            {
+                                   "tileid": 75,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          4,
+                                          1,
+                                          4,
+                                          1,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 76,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          4,
+                                          1,
+                                          1,
+                                          1,
+                                          4,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 77,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          4,
+                                          1,
+                                          4,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 80,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          3,
+                                          2,
+                                          3,
+                                          2,
+                                          2,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 81,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          3,
+                                          2,
+                                          2,
+                                          2,
+                                          3,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 82,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          3,
+                                          2,
+                                          3,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 90,
+                                   "wangid": [
+                                          4,
+                                          1,
+                                          1,
+                                          1,
+                                          4,
+                                          1,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 91,
+                                   "wangid": [
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4
+                                   ]
+                            },
+                            {
+                                   "tileid": 92,
+                                   "wangid": [
+                                          4,
+                                          1,
+                                          1,
+                                          1,
+                                          4,
+                                          1,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 93,
+                                   "wangid": [
+                                          4,
+                                          4,
+                                          4,
+                                          1,
+                                          4,
+                                          4,
+                                          4,
+                                          4
+                                   ]
+                            },
+                            {
+                                   "tileid": 94,
+                                   "wangid": [
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          1,
+                                          4,
+                                          4
+                                   ]
+                            },
+                            {
+                                   "tileid": 95,
+                                   "wangid": [
+                                          3,
+                                          2,
+                                          2,
+                                          2,
+                                          3,
+                                          2,
+                                          2,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 96,
+                                   "wangid": [
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3
+                                   ]
+                            },
+                            {
+                                   "tileid": 97,
+                                   "wangid": [
+                                          3,
+                                          2,
+                                          2,
+                                          2,
+                                          3,
+                                          2,
+                                          2,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 98,
+                                   "wangid": [
+                                          3,
+                                          3,
+                                          2,
+                                          2,
+                                          2,
+                                          3,
+                                          3,
+                                          3
+                                   ]
+                            },
+                            {
+                                   "tileid": 99,
+                                   "wangid": [
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          2,
+                                          2,
+                                          2,
+                                          3
+                                   ]
+                            },
+                            {
+                                   "tileid": 105,
+                                   "wangid": [
+                                          4,
+                                          1,
+                                          4,
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 106,
+                                   "wangid": [
+                                          1,
+                                          1,
+                                          4,
+                                          1,
+                                          1,
+                                          1,
+                                          4,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 107,
+                                   "wangid": [
+                                          4,
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          1,
+                                          4,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 108,
+                                   "wangid": [
+                                          4,
+                                          1,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4
+                                   ]
+                            },
+                            {
+                                   "tileid": 109,
+                                   "wangid": [
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          4,
+                                          1
+                                   ]
+                            },
+                            {
+                                   "tileid": 110,
+                                   "wangid": [
+                                          3,
+                                          2,
+                                          3,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 111,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          3,
+                                          2,
+                                          2,
+                                          2,
+                                          3,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 112,
+                                   "wangid": [
+                                          3,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          2,
+                                          3,
+                                          2
+                                   ]
+                            },
+                            {
+                                   "tileid": 113,
+                                   "wangid": [
+                                          2,
+                                          2,
+                                          2,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3
+                                   ]
+                            },
+                            {
+                                   "tileid": 114,
+                                   "wangid": [
+                                          2,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          3,
+                                          2,
+                                          2
+                                   ]
+                            }
+                     ]
+              }
+       ]
+}
