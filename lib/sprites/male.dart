@@ -1,6 +1,14 @@
 import 'package:bonfire/bonfire.dart';
 
 class PlayerSpriteSheet {
+  static Future<SpriteAnimation> blank() => SpriteAnimation.load(
+        'male/Idle/char_idle_right.png',
+        SpriteAnimationData.sequenced(
+          amount: 6,
+          stepTime: 0.1,
+          textureSize: Vector2(0, 0),
+        ),
+      );
   static Future<SpriteAnimation> idleRight() => SpriteAnimation.load(
         'male/Idle/char_idle_right.png',
         SpriteAnimationData.sequenced(
@@ -14,7 +22,7 @@ static Future<SpriteAnimation> attackBottom() => SpriteAnimation.load(
         SpriteAnimationData.sequenced(
           amount: 6,
           stepTime: 0.1,
-          textureSize: Vector2(22, 23),
+          textureSize: Vector2(23, 23),
         ),
       );
 
@@ -39,7 +47,7 @@ static Future<SpriteAnimation> attackBottom() => SpriteAnimation.load(
         SpriteAnimationData.sequenced(
           amount: 6,
           stepTime: 0.1,
-          textureSize: Vector2(22, 23),
+          textureSize: Vector2(23, 18),
         ),
       );
 

@@ -26,7 +26,7 @@ class Female extends SimplePlayer with Lighting, ObjectCollision {
           life: 200,
           speed: tileSize / 0.25,
         ) {
-    print(height);
+    // print(height);
     // setupCollision(
     //   CollisionConfig(
     //     collisions: [

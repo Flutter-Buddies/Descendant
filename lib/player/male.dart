@@ -85,7 +85,11 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
   //   );
   //   super.die();
   // }
-void _addAttackAnimation() {
+  void _addAttackAnimation() async {
+    if (stamina < 15) {
+      return;
+    }
+
     Future<SpriteAnimation> newAnimation;
     switch (lastDirection) {
       case Direction.left:
@@ -101,34 +105,36 @@ void _addAttackAnimation() {
         newAnimation = PlayerSpriteSheet.attackBottom();
         break;
       case Direction.upLeft:
-        newAnimation = PlayerSpriteSheet.attackTop();
+        newAnimation = PlayerSpriteSheet.attackLeft();
         break;
       case Direction.upRight:
-        newAnimation = PlayerSpriteSheet.attackTop();
+        newAnimation = PlayerSpriteSheet.attackRight();
         break;
       case Direction.downLeft:
-        newAnimation = PlayerSpriteSheet.attackBottom();
+        newAnimation = PlayerSpriteSheet.attackLeft();
         break;
       case Direction.downRight:
-        newAnimation = PlayerSpriteSheet.attackBottom();
+        newAnimation = PlayerSpriteSheet.attackRight();
         break;
     }
+    actionAttack(await newAnimation);
     animation.playOnce(newAnimation, position);
+    // double oldHeight = this.height;
+    // double oldWidth = this.width;
+
+    // SpriteAnimation _newAnimationFinal = await newAnimation;    
+    // var newSize = _newAnimationFinal.getSprite().originalSize;
   }
 
-  void actionAttack() {
-    if (stamina < 15) {
-      return;
-    }
-
+  void actionAttack(SpriteAnimation newAnimation) {
     // Sounds.attackPlayerMelee();
     // decrementStamina(15);
     this.simpleAttackMelee(
       damage: attack,
-      animationBottom: PlayerSpriteSheet.attackBottom(),
-      animationLeft: PlayerSpriteSheet.attackLeft(),
-      animationRight: PlayerSpriteSheet.attackRight(),
-      animationTop: PlayerSpriteSheet.attackTop(),
+      animationBottom: PlayerSpriteSheet.blank(),
+      animationLeft: PlayerSpriteSheet.blank(),
+      animationRight: PlayerSpriteSheet.blank(),
+      animationTop: PlayerSpriteSheet.blank(),
       height: tileSize,
       width: tileSize,
     );
