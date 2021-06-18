@@ -64,7 +64,7 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
     }
 
     if (event.id == 1 && event.event == ActionEvent.DOWN) {
-      // actionAttackRange();
+      _addBlockAnimation();
     }
     super.joystickAction(event);
   }
@@ -113,6 +113,40 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
       height: tileSize,
       width: tileSize,
     );
+  }
+
+  void _addBlockAnimation() async {
+    Future<SpriteAnimation> newAnimation;
+    this.speed = 0;
+
+    switch (lastDirection) {
+      case Direction.left:
+        newAnimation = PlayerSpriteSheet.idleShieldLeft();
+        break;
+      case Direction.right:
+        newAnimation = PlayerSpriteSheet.idleShieldRight();
+        break;
+      case Direction.up:
+        newAnimation = PlayerSpriteSheet.idleShieldUp();
+        break;
+      case Direction.down:
+        newAnimation = PlayerSpriteSheet.idleShieldDown();
+        break;
+      case Direction.upLeft:
+        newAnimation = PlayerSpriteSheet.idleShieldLeft();
+        break;
+      case Direction.upRight:
+        newAnimation = PlayerSpriteSheet.idleShieldRight();
+        break;
+      case Direction.downLeft:
+        newAnimation = PlayerSpriteSheet.idleShieldLeft();
+        break;
+      case Direction.downRight:
+        newAnimation = PlayerSpriteSheet.idleShieldRight();
+        break;
+    }
+
+    animation.playOnce(newAnimation, position, runToTheEnd: true);
   }
 
   // void actionAttackRange() {

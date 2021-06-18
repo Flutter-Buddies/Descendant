@@ -78,13 +78,13 @@ class _GameState extends State<Game>
               size: 80,
               margin: EdgeInsets.only(bottom: 50, right: 50),
             ),
-            // JoystickAction(
-            //   actionId: 1,
-            //   sprite: Sprite.load('joystick_attack_range.png'),
-            //   spritePressed: Sprite.load('joystick_attack_range_selected.png'),
-            //   size: 50,
-            //   margin: EdgeInsets.only(bottom: 50, right: 160),
-            // )
+            JoystickAction(
+              actionId: 1,
+              sprite: Sprite.load('joystick_block.png'),
+              spritePressed: Sprite.load('joystick_block_selected.png'),
+              size: 50,
+              margin: EdgeInsets.only(bottom: 50, right: 160),
+            )
           ],
         ),
         player: Male(

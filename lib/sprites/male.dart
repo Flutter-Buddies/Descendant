@@ -31,6 +31,24 @@ class PlayerSpriteSheet {
   static Future<SpriteAnimation> runLeft = _getAnimation("runLeft");
   static Future<SpriteAnimation> runRight = _getAnimation("runRight");
 
+  static Future<SpriteAnimation> idleShieldDown() =>
+      _getAnimation("idleShieldDown");
+  static Future<SpriteAnimation> idleShieldUp() =>
+      _getAnimation("idleShieldUp");
+  static Future<SpriteAnimation> idleShieldLeft() =>
+      _getAnimation("idleShieldLeft");
+  static Future<SpriteAnimation> idleShieldRight() =>
+      _getAnimation("idleShieldRight");
+
+  static Future<SpriteAnimation> runShieldDown() =>
+      _getAnimation("runShieldDown");
+  static Future<SpriteAnimation> runShieldUp() => _getAnimation("runShieldUp");
+  static Future<SpriteAnimation> runShieldLeft() =>
+      _getAnimation("runShieldLeft");
+  static Future<SpriteAnimation> runShieldRight() =>
+      _getAnimation("runShieldRight");
+
+
   static SimpleDirectionAnimation playerAnimations() =>
       SimpleDirectionAnimation(
         idleLeft: idleLeft,
@@ -143,6 +161,70 @@ Future<SpriteAnimation> _getAnimation(String animation,
         height: 40,
         count: 6,
         stepTime: speed,
+      );
+    case "idleShieldDown":
+      return spriteSheetPlayer.getAnimation(
+        startDy: 480,
+        width: 40,
+        height: 40,
+        count: 6,
+        stepTime: 0.25,
+      );
+    case "idleShieldUp":
+      return spriteSheetPlayer.getAnimation(
+        startDy: 520,
+        width: 40,
+        height: 40,
+        count: 6,
+        stepTime: 0.25,
+      );
+    case "idleShieldLeft":
+      return spriteSheetPlayer.getAnimation(
+        startDy: 560,
+        width: 40,
+        height: 40,
+        count: 6,
+        stepTime: 0.25,
+      );
+    case "idleShieldRight":
+      return spriteSheetPlayer.getAnimation(
+        startDy: 600,
+        width: 40,
+        height: 40,
+        count: 6,
+        stepTime: 0.25,
+      );
+    case "runShieldDown":
+      return spriteSheetPlayer.getAnimation(
+        startDy: 640,
+        width: 40,
+        height: 40,
+        count: 6,
+        stepTime: 0.25,
+      );
+    case "runShieldUp":
+      return spriteSheetPlayer.getAnimation(
+        startDy: 680,
+        width: 40,
+        height: 40,
+        count: 6,
+        stepTime: 0.25,
+      );
+    case "runShieldLeft":
+      return spriteSheetPlayer.getAnimation(
+        startDy: 720,
+        width: 40,
+        height: 40,
+        count: 6,
+        stepTime: 0.25,
+      );
+    case "runShieldRight":
+      return spriteSheetPlayer.getAnimation(
+        startDy: 760,
+        width: 40,
+        height: 40,
+        count: 6,
+        stepTime: 0.25,
       );
     default:
       return spriteSheetPlayer.getAnimation(width: 0, height: 0, count: 6);

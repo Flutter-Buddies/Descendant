@@ -13,16 +13,16 @@
             "scaleInDock": 1
         },
         "map.json": {
-            "scale": 3.2999,
-            "selectedLayer": 0,
+            "scale": 1.5,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 242.1285493499803,
-                "y": 238.1890360313949
+                "x": 231.66666666666666,
+                "y": 119.66666666666666
             }
         },
         "tileset.json": {
             "scaleInDock": 1.5,
-            "scaleInEditor": 8
+            "scaleInEditor": 3
         }
     },
     "last.imagePath": "C:/Users/hans/git-repos/ProjectFireborn/assets/images/tiled",
