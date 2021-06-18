@@ -11,9 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  bonfire: ^1.1.3
+  bonfire: ^1.1.5
   cupertino_icons: ^1.0.2
-  flame: ^1.0.0-rc1
   flame_audio: ^1.0.0-rc.1
   url_launcher: ^6.0.6
 

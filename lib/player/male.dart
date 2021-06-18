@@ -21,8 +21,8 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
     required this.initPosition,
   }) : super(
           animation: PlayerSpriteSheet.playerAnimations(),
-          width: tileSize * 4,
-          height: tileSize * 4,
+          width: valueByTileSize(40),
+          height: valueByTileSize(40),
           position: initPosition,
           life: 200,
           speed: tileSize / 0.25,
@@ -34,8 +34,8 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
           CollisionArea.rectangle(
             size: Size(valueByTileSize(8), valueByTileSize(8)),
             align: Vector2(
-              valueByTileSize(4),
-              valueByTileSize(8),
+              valueByTileSize(16),
+              valueByTileSize(20),
             ),
           ),
         ],
@@ -44,7 +44,7 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
 
     setupLighting(
       LightingConfig(
-        radius: width * 1.5,
+        radius: width,
         blurBorder: width,
         color: Colors.deepOrangeAccent.withOpacity(0.2),
       ),
@@ -69,68 +69,47 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
     super.joystickAction(event);
   }
 
-  // @override
-  // void die() {
-  //   remove();
-  //   gameRef.addGameComponent(
-  //     GameDecoration.withSprite(
-  //       Sprite.load('player/crypt.png'),
-  //       position: Vector2(
-  //         this.position.center.dx,
-  //         this.position.center.dy,
-  //       ),
-  //       height: 30,
-  //       width: 30,
-  //     ),
-  //   );
-  //   super.die();
-  // }
   void _addAttackAnimation() async {
     if (stamina < 15) {
       return;
     }
 
     Future<SpriteAnimation> newAnimation;
+
     switch (lastDirection) {
       case Direction.left:
-        newAnimation = PlayerSpriteSheet.attackLeft;
+        newAnimation = PlayerSpriteSheet.attackLeft();
         break;
       case Direction.right:
-        newAnimation = PlayerSpriteSheet.attackRight;
+        newAnimation = PlayerSpriteSheet.attackRight();
         break;
       case Direction.up:
-        newAnimation = PlayerSpriteSheet.attackUp;
+        newAnimation = PlayerSpriteSheet.attackUp();
         break;
       case Direction.down:
-        newAnimation = PlayerSpriteSheet.attackDown;
+        newAnimation = PlayerSpriteSheet.attackDown();
         break;
       case Direction.upLeft:
-        newAnimation = PlayerSpriteSheet.attackLeft;
+        newAnimation = PlayerSpriteSheet.attackLeft();
         break;
       case Direction.upRight:
-        newAnimation = PlayerSpriteSheet.attackRight;
+        newAnimation = PlayerSpriteSheet.attackRight();
         break;
       case Direction.downLeft:
-        newAnimation = PlayerSpriteSheet.attackLeft;
+        newAnimation = PlayerSpriteSheet.attackLeft();
         break;
       case Direction.downRight:
-        newAnimation = PlayerSpriteSheet.attackRight;
+        newAnimation = PlayerSpriteSheet.attackRight();
         break;
     }
-    actionAttack(await newAnimation);
+
     animation.playOnce(newAnimation, position);
-    newAnimation = PlayerSpriteSheet.blank;
+    actionAttack();
   }
 
-  void actionAttack(SpriteAnimation newAnimation) {
-    // Sounds.attackPlayerMelee();
-    // decrementStamina(15);
+  void actionAttack() {
     this.simpleAttackMelee(
       damage: attack,
-      animationBottom: PlayerSpriteSheet.blank,
-      animationLeft: PlayerSpriteSheet.blank,
-      animationRight: PlayerSpriteSheet.blank,
-      animationTop: PlayerSpriteSheet.blank,
       height: tileSize,
       width: tileSize,
     );
@@ -170,29 +149,6 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
   // );
 }
 
-@override
-void update(double dt) {
-  // if (isDead) return;
-  // _verifyStamina();
-  // this.seeEnemy(
-  //   radiusVision: tileSize * 6,
-  //   notObserved: () {
-  //     showObserveEnemy = false;
-  //   },
-  //   observed: (enemies) {
-  //     if (showObserveEnemy) return;
-  //     showObserveEnemy = true;
-  //     _showEmote();
-  //   },
-  // );
-  // super.update(dt);
-}
-
-@override
-void render(Canvas c) {
-  // super.render(c);
-}
-
 // void _verifyStamina() {
 //   _timerStamina = async.Timer(Duration(milliseconds: 150), () {});
 
@@ -209,19 +165,6 @@ void render(Canvas c) {
 //   }
 // }
 
-@override
-void receiveDamage(double damage, dynamic id) {
-  // if (isDead) return;
-  // this.showDamage(
-  //   damage,
-  //   config: TextPaintConfig(
-  // fontSize: valueByTileSize(5),
-  //     color: Colors.orange,
-  //     fontFamily: 'Normal',
-  //   ),
-  // );
-  // super.receiveDamage(damage, id);
-}
 
 // void _showEmote({String emote = 'emote/emote_exclamacao.png'}) {
 //   gameRef.add(
