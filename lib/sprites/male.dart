@@ -4,10 +4,22 @@ import 'package:flame/image_composition.dart';
 class PlayerSpriteSheet {
   static Future<SpriteAnimation> blank = _getAnimation("");
 
-  static Future<SpriteAnimation> attackLeft = _getAnimation("attackLeft");
-  static Future<SpriteAnimation> attackRight = _getAnimation("attackRight");
-  static Future<SpriteAnimation> attackUp = _getAnimation("attackUp");
-  static Future<SpriteAnimation> attackDown = _getAnimation("attackDown");
+  static Future<SpriteAnimation> attackLeft() => _getAnimation(
+        "attackLeft",
+        speed: 0.05,
+      );
+  static Future<SpriteAnimation> attackRight() => _getAnimation(
+        "attackRight",
+        speed: 0.05,
+      );
+  static Future<SpriteAnimation> attackUp() => _getAnimation(
+        "attackUp",
+        speed: 0.05,
+      );
+  static Future<SpriteAnimation> attackDown() => _getAnimation(
+        "attackDown",
+        speed: 0.05,
+      );
 
   static Future<SpriteAnimation> idleDown = _getAnimation("idleDown");
   static Future<SpriteAnimation> idleUp = _getAnimation("idleUp");
@@ -32,7 +44,8 @@ class PlayerSpriteSheet {
       );
 }
 
-Future<SpriteAnimation> _getAnimation(String animation) async {
+Future<SpriteAnimation> _getAnimation(String animation,
+    {double speed = 0.1}) async {
   Image spriteSheetPlayer = await Flame.images.load('male/male_game.png');
 
   switch (animation) {
@@ -41,7 +54,7 @@ Future<SpriteAnimation> _getAnimation(String animation) async {
         width: 40,
         height: 40,
         count: 6,
-        stepTime: 0.1,
+        stepTime: speed,
       );
     case "idleUp":
       return spriteSheetPlayer.getAnimation(
@@ -49,7 +62,7 @@ Future<SpriteAnimation> _getAnimation(String animation) async {
         width: 40,
         height: 40,
         count: 6,
-        stepTime: 0.1,
+        stepTime: speed,
       );
     case "idleLeft":
       return spriteSheetPlayer.getAnimation(
@@ -57,7 +70,7 @@ Future<SpriteAnimation> _getAnimation(String animation) async {
         width: 40,
         height: 40,
         count: 6,
-        stepTime: 0.1,
+        stepTime: speed,
       );
     case "idleRight":
       return spriteSheetPlayer.getAnimation(
@@ -65,7 +78,7 @@ Future<SpriteAnimation> _getAnimation(String animation) async {
         width: 40,
         height: 40,
         count: 6,
-        stepTime: 0.1,
+        stepTime: speed,
       );
     case "runDown":
       return spriteSheetPlayer.getAnimation(
@@ -73,7 +86,7 @@ Future<SpriteAnimation> _getAnimation(String animation) async {
         width: 40,
         height: 40,
         count: 6,
-        stepTime: 0.1,
+        stepTime: speed,
       );
     case "runUp":
       return spriteSheetPlayer.getAnimation(
@@ -81,7 +94,7 @@ Future<SpriteAnimation> _getAnimation(String animation) async {
         width: 40,
         height: 40,
         count: 6,
-        stepTime: 0.1,
+        stepTime: speed,
       );
     case "runLeft":
       return spriteSheetPlayer.getAnimation(
@@ -89,7 +102,7 @@ Future<SpriteAnimation> _getAnimation(String animation) async {
         width: 40,
         height: 40,
         count: 6,
-        stepTime: 0.1,
+        stepTime: speed,
       );
     case "runRight":
       return spriteSheetPlayer.getAnimation(
@@ -97,7 +110,7 @@ Future<SpriteAnimation> _getAnimation(String animation) async {
         width: 40,
         height: 40,
         count: 6,
-        stepTime: 0.1,
+        stepTime: speed,
       );
     case "attackDown":
       return spriteSheetPlayer.getAnimation(
@@ -105,7 +118,7 @@ Future<SpriteAnimation> _getAnimation(String animation) async {
         width: 40,
         height: 40,
         count: 6,
-        stepTime: 0.1,
+        stepTime: speed,
       );
     case "attackUp":
       return spriteSheetPlayer.getAnimation(
@@ -113,7 +126,7 @@ Future<SpriteAnimation> _getAnimation(String animation) async {
         width: 40,
         height: 40,
         count: 6,
-        stepTime: 0.1,
+        stepTime: speed,
       );
     case "attackLeft":
       return spriteSheetPlayer.getAnimation(
@@ -121,7 +134,7 @@ Future<SpriteAnimation> _getAnimation(String animation) async {
         width: 40,
         height: 40,
         count: 6,
-        stepTime: 0.1,
+        stepTime: speed,
       );
     case "attackRight":
       return spriteSheetPlayer.getAnimation(
@@ -129,7 +142,7 @@ Future<SpriteAnimation> _getAnimation(String animation) async {
         width: 40,
         height: 40,
         count: 6,
-        stepTime: 0.1,
+        stepTime: speed,
       );
     default:
       return spriteSheetPlayer.getAnimation(width: 0, height: 0, count: 6);
