@@ -15,7 +15,7 @@ class _MenuState extends State<Menu> {
   int currentPosition = 0;
   late async.Timer _timer;
   List<Future<SpriteAnimation>> sprites = [
-    PlayerSpriteSheet.idleRight(),
+    PlayerSpriteSheet.idleDown,
   ];
 
   @override

@@ -21,8 +21,8 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
     required this.initPosition,
   }) : super(
           animation: PlayerSpriteSheet.playerAnimations(),
-          width: tileSize,
-          height: tileSize,
+          width: tileSize * 4,
+          height: tileSize * 4,
           position: initPosition,
           life: 200,
           speed: tileSize / 0.25,
@@ -93,37 +93,33 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
     Future<SpriteAnimation> newAnimation;
     switch (lastDirection) {
       case Direction.left:
-        newAnimation = PlayerSpriteSheet.attackLeft();
+        newAnimation = PlayerSpriteSheet.attackLeft;
         break;
       case Direction.right:
-        newAnimation = PlayerSpriteSheet.attackRight();
+        newAnimation = PlayerSpriteSheet.attackRight;
         break;
       case Direction.up:
-        newAnimation = PlayerSpriteSheet.attackTop();
+        newAnimation = PlayerSpriteSheet.attackUp;
         break;
       case Direction.down:
-        newAnimation = PlayerSpriteSheet.attackBottom();
+        newAnimation = PlayerSpriteSheet.attackDown;
         break;
       case Direction.upLeft:
-        newAnimation = PlayerSpriteSheet.attackLeft();
+        newAnimation = PlayerSpriteSheet.attackLeft;
         break;
       case Direction.upRight:
-        newAnimation = PlayerSpriteSheet.attackRight();
+        newAnimation = PlayerSpriteSheet.attackRight;
         break;
       case Direction.downLeft:
-        newAnimation = PlayerSpriteSheet.attackLeft();
+        newAnimation = PlayerSpriteSheet.attackLeft;
         break;
       case Direction.downRight:
-        newAnimation = PlayerSpriteSheet.attackRight();
+        newAnimation = PlayerSpriteSheet.attackRight;
         break;
     }
     actionAttack(await newAnimation);
     animation.playOnce(newAnimation, position);
-    // double oldHeight = this.height;
-    // double oldWidth = this.width;
-
-    // SpriteAnimation _newAnimationFinal = await newAnimation;    
-    // var newSize = _newAnimationFinal.getSprite().originalSize;
+    newAnimation = PlayerSpriteSheet.blank;
   }
 
   void actionAttack(SpriteAnimation newAnimation) {
@@ -131,10 +127,10 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
     // decrementStamina(15);
     this.simpleAttackMelee(
       damage: attack,
-      animationBottom: PlayerSpriteSheet.blank(),
-      animationLeft: PlayerSpriteSheet.blank(),
-      animationRight: PlayerSpriteSheet.blank(),
-      animationTop: PlayerSpriteSheet.blank(),
+      animationBottom: PlayerSpriteSheet.blank,
+      animationLeft: PlayerSpriteSheet.blank,
+      animationRight: PlayerSpriteSheet.blank,
+      animationTop: PlayerSpriteSheet.blank,
       height: tileSize,
       width: tileSize,
     );
@@ -227,25 +223,25 @@ void receiveDamage(double damage, dynamic id) {
   // super.receiveDamage(damage, id);
 }
 
-  // void _showEmote({String emote = 'emote/emote_exclamacao.png'}) {
-  //   gameRef.add(
-  //     AnimatedFollowerObject(
-  //       animation: SpriteAnimation.load(
-  //         emote,
-  //         SpriteAnimationData.sequenced(
-  //           amount: 8,
-  //           stepTime: 0.1,
-  //           textureSize: Vector2(32, 32),
-  //         ),
-  //       ),
-  //       target: this,
-  //       positionFromTarget: Rect.fromLTWH(
-  //         18,
-  //         -6,
-  //         tileSize / 2,
-  //         tileSize / 2,
-  //       ).toVector2Rect(),
-  //     ),
-  //   );
-  // }
+// void _showEmote({String emote = 'emote/emote_exclamacao.png'}) {
+//   gameRef.add(
+//     AnimatedFollowerObject(
+//       animation: SpriteAnimation.load(
+//         emote,
+//         SpriteAnimationData.sequenced(
+//           amount: 8,
+//           stepTime: 0.1,
+//           textureSize: Vector2(32, 32),
+//         ),
+//       ),
+//       target: this,
+//       positionFromTarget: Rect.fromLTWH(
+//         18,
+//         -6,
+//         tileSize / 2,
+//         tileSize / 2,
+//       ).toVector2Rect(),
+//     ),
+//   );
+// }
 // }
