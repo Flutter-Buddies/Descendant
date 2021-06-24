@@ -16,6 +16,7 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
   // late async.Timer _timerStam
   bool containKey = false;
   bool showObserveEnemy = false;
+  bool isBlocking = false;
 
   Male({
     required this.initPosition,
@@ -52,6 +53,41 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
   }
 
   @override
+  void update(double dt) async {
+    late SpriteAnimation newAnimation;
+    if (isBlocking) {
+      switch (lastDirection) {
+        case Direction.left:
+          newAnimation = await PlayerSpriteSheet.idleShieldLeft();
+          break;
+        case Direction.right:
+          newAnimation = await PlayerSpriteSheet.idleShieldRight();
+          break;
+        case Direction.up:
+          newAnimation = await PlayerSpriteSheet.idleShieldUp();
+          break;
+        case Direction.down:
+          newAnimation = await PlayerSpriteSheet.idleShieldDown();
+          break;
+        case Direction.upLeft:
+          newAnimation = await PlayerSpriteSheet.idleShieldLeft();
+          break;
+        case Direction.upRight:
+          newAnimation = await PlayerSpriteSheet.idleShieldRight();
+          break;
+        case Direction.downLeft:
+          newAnimation = await PlayerSpriteSheet.idleShieldLeft();
+          break;
+        case Direction.downRight:
+          newAnimation = await PlayerSpriteSheet.idleShieldRight();
+          break;
+      }
+    }
+    animation.current = newAnimation;
+    super.update(dt);
+  }
+
+  @override
   void joystickChangeDirectional(JoystickDirectionalEvent event) {
     this.speed = initSpeed * event.intensity;
     super.joystickChangeDirectional(event);
@@ -64,8 +100,13 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
     }
 
     if (event.id == 1 && event.event == ActionEvent.DOWN) {
-      _addBlockAnimation();
+        isBlocking = true;
     }
+
+    if (event.id == 1 && event.event == ActionEvent.UP) {
+      isBlocking = false;
+    }
+
     super.joystickAction(event);
   }
 
@@ -113,40 +154,6 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
       height: tileSize,
       width: tileSize,
     );
-  }
-
-  void _addBlockAnimation() async {
-    Future<SpriteAnimation> newAnimation;
-    this.speed = 0;
-
-    switch (lastDirection) {
-      case Direction.left:
-        newAnimation = PlayerSpriteSheet.idleShieldLeft();
-        break;
-      case Direction.right:
-        newAnimation = PlayerSpriteSheet.idleShieldRight();
-        break;
-      case Direction.up:
-        newAnimation = PlayerSpriteSheet.idleShieldUp();
-        break;
-      case Direction.down:
-        newAnimation = PlayerSpriteSheet.idleShieldDown();
-        break;
-      case Direction.upLeft:
-        newAnimation = PlayerSpriteSheet.idleShieldLeft();
-        break;
-      case Direction.upRight:
-        newAnimation = PlayerSpriteSheet.idleShieldRight();
-        break;
-      case Direction.downLeft:
-        newAnimation = PlayerSpriteSheet.idleShieldLeft();
-        break;
-      case Direction.downRight:
-        newAnimation = PlayerSpriteSheet.idleShieldRight();
-        break;
-    }
-
-    animation.playOnce(newAnimation, position, runToTheEnd: true);
   }
 
   // void actionAttackRange() {

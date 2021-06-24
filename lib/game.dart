@@ -68,7 +68,7 @@ class _GameState extends State<Game>
             spriteBackgroundDirectional: Sprite.load('joystick_background.png'),
             spriteKnobDirectional: Sprite.load('joystick_knob.png'),
             size: 100,
-            isFixed: false,
+            isFixed: true,
           ),
           actions: [
             JoystickAction(
