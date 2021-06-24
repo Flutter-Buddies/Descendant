@@ -59,6 +59,12 @@ class PlayerSpriteSheet {
         runDown: runDown,
         runUp: runUp,
         runRight: runRight,
+        others: {
+          'idleShieldDown':idleShieldDown(),
+          'idleShieldUp':idleShieldUp(),
+          'idleShieldLeft':idleShieldLeft(),
+          'idleShieldRight':idleShieldRight(),
+        }
       );
 }
 

@@ -61,36 +61,33 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
     super.update(dt);
   }
 
-  void getBlockingAnimation() async {
-    late SpriteAnimation newAnimation;
+  void getBlockingAnimation() {
     switch (lastDirection) {
       case Direction.left:
-        newAnimation = await PlayerSpriteSheet.idleShieldLeft();
+        animation.playOther('idleShieldLeft');
         break;
       case Direction.right:
-        newAnimation = await PlayerSpriteSheet.idleShieldRight();
+        animation.playOther('idleShieldRight');
         break;
       case Direction.up:
-        newAnimation = await PlayerSpriteSheet.idleShieldUp();
+        animation.playOther('idleShieldUp');
         break;
       case Direction.down:
-        newAnimation = await PlayerSpriteSheet.idleShieldDown();
+        animation.playOther('idleShieldDown');
         break;
       case Direction.upLeft:
-        newAnimation = await PlayerSpriteSheet.idleShieldLeft();
+        animation.playOther('idleShieldLeft');
         break;
       case Direction.upRight:
-        newAnimation = await PlayerSpriteSheet.idleShieldRight();
+        animation.playOther('idleShieldRight');
         break;
       case Direction.downLeft:
-        newAnimation = await PlayerSpriteSheet.idleShieldLeft();
+        animation.playOther('idleShieldLeft');
         break;
       case Direction.downRight:
-        newAnimation = await PlayerSpriteSheet.idleShieldRight();
+        animation.playOther('idleShieldRight');
         break;
     }
-
-    animation.current = newAnimation;
   }
 
   @override
@@ -111,6 +108,7 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
 
     if (event.id == 1 && event.event == ActionEvent.UP) {
       isBlocking = false;
+      isIdle = false;
       idle();
     }
 
@@ -161,6 +159,12 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
       height: tileSize,
       width: tileSize,
     );
+  }
+
+  @override
+  void receiveDamage(double damage, from) {
+    if(isBlocking) return;
+    super.receiveDamage(damage, from);
   }
 
   // void actionAttackRange() {
