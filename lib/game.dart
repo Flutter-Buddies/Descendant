@@ -57,10 +57,10 @@ class _GameState extends State<Game>
   @override
   Widget build(BuildContext context) {
     Size sizeScreen = MediaQuery.of(context).size;
-    tileSize = max(sizeScreen.height, sizeScreen.width) / 16;
+    tileSize = max(sizeScreen.height, sizeScreen.width) / 20;
 
     return Material(
-      color: Colors.transparent,
+      type: MaterialType.transparency,
       child: BonfireTiledWidget(
         gameController: _controller,
         joystick: Joystick(
