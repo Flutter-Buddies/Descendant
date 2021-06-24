@@ -53,38 +53,44 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
   }
 
   @override
-  void update(double dt) async {
-    late SpriteAnimation newAnimation;
+  void update(double dt) {
     if (isBlocking) {
-      switch (lastDirection) {
-        case Direction.left:
-          newAnimation = await PlayerSpriteSheet.idleShieldLeft();
-          break;
-        case Direction.right:
-          newAnimation = await PlayerSpriteSheet.idleShieldRight();
-          break;
-        case Direction.up:
-          newAnimation = await PlayerSpriteSheet.idleShieldUp();
-          break;
-        case Direction.down:
-          newAnimation = await PlayerSpriteSheet.idleShieldDown();
-          break;
-        case Direction.upLeft:
-          newAnimation = await PlayerSpriteSheet.idleShieldLeft();
-          break;
-        case Direction.upRight:
-          newAnimation = await PlayerSpriteSheet.idleShieldRight();
-          break;
-        case Direction.downLeft:
-          newAnimation = await PlayerSpriteSheet.idleShieldLeft();
-          break;
-        case Direction.downRight:
-          newAnimation = await PlayerSpriteSheet.idleShieldRight();
-          break;
-      }
+      getBlockingAnimation();
     }
-    animation.current = newAnimation;
+
     super.update(dt);
+  }
+
+  void getBlockingAnimation() async {
+    late SpriteAnimation newAnimation;
+    switch (lastDirection) {
+      case Direction.left:
+        newAnimation = await PlayerSpriteSheet.idleShieldLeft();
+        break;
+      case Direction.right:
+        newAnimation = await PlayerSpriteSheet.idleShieldRight();
+        break;
+      case Direction.up:
+        newAnimation = await PlayerSpriteSheet.idleShieldUp();
+        break;
+      case Direction.down:
+        newAnimation = await PlayerSpriteSheet.idleShieldDown();
+        break;
+      case Direction.upLeft:
+        newAnimation = await PlayerSpriteSheet.idleShieldLeft();
+        break;
+      case Direction.upRight:
+        newAnimation = await PlayerSpriteSheet.idleShieldRight();
+        break;
+      case Direction.downLeft:
+        newAnimation = await PlayerSpriteSheet.idleShieldLeft();
+        break;
+      case Direction.downRight:
+        newAnimation = await PlayerSpriteSheet.idleShieldRight();
+        break;
+    }
+
+    animation.current = newAnimation;
   }
 
   @override
@@ -100,11 +106,12 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
     }
 
     if (event.id == 1 && event.event == ActionEvent.DOWN) {
-        isBlocking = true;
+      isBlocking = true;
     }
 
     if (event.id == 1 && event.event == ActionEvent.UP) {
       isBlocking = false;
+      idle();
     }
 
     super.joystickAction(event);
