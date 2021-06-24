@@ -54,10 +54,10 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
 
   @override
   void update(double dt) {
+    super.update(dt);
     if (isBlocking) {
       getBlockingAnimation();
     }
-    super.update(dt);
   }
 
   void getBlockingAnimation() {
@@ -161,7 +161,7 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
 
   @override
   void receiveDamage(double damage, from) {
-    if(isBlocking) return;
+    if (isBlocking) return;
     super.receiveDamage(damage, from);
   }
 
