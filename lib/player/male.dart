@@ -57,7 +57,6 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
     if (isBlocking) {
       getBlockingAnimation();
     }
-
     super.update(dt);
   }
 
