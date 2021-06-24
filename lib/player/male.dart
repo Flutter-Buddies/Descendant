@@ -107,7 +107,6 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
 
     if (event.id == 1 && event.event == ActionEvent.UP) {
       isBlocking = false;
-      isIdle = false;
       idle();
     }
 
@@ -148,7 +147,7 @@ class Male extends SimplePlayer with Lighting, ObjectCollision {
         break;
     }
 
-    animation.playOnce(newAnimation, position);
+    animation.playOnce(newAnimation);
     actionAttack();
   }
 
