@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "map.json",
+    "activeFile": "tileset.json",
     "expandedProjectPaths": [
         "."
     ],
@@ -13,11 +13,11 @@
             "scaleInDock": 1
         },
         "map.json": {
-            "scale": 1.5,
+            "scale": 2,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 582.3333333333333,
-                "y": 277.33333333333326
+                "x": 186.75,
+                "y": 204.25
             }
         },
         "tileset.json": {
@@ -35,8 +35,8 @@
     ],
     "project": "Fireborn.tiled-project",
     "recentFiles": [
-        "tileset.json",
-        "map.json"
+        "map.json",
+        "tileset.json"
     ],
     "tileset.lastUsedFormat": "json",
     "tileset.tileSize": {

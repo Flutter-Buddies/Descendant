@@ -1,4 +1,5 @@
 import 'package:bonfire/bonfire.dart';
+import 'package:project_fireborn/main.dart';
 import 'package:project_fireborn/player/male.dart';
 
 class DoorKey extends GameDecoration with Sensor {
@@ -6,8 +7,8 @@ class DoorKey extends GameDecoration with Sensor {
       : super.withSprite(
           Sprite.load('items/key.png'),
           position: position,
-          width: 16,
-          height: 16,
+          width: tileSize,
+          height: tileSize,
         );
 
   @override
