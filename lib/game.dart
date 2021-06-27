@@ -1,11 +1,11 @@
 import 'dart:math';
 
 import 'package:bonfire/bonfire.dart';
+import 'package:flutter/material.dart';
 import 'package:project_fireborn/interface/player_interface.dart';
 import 'package:project_fireborn/items/key.dart';
 import 'package:project_fireborn/main.dart';
 import 'package:project_fireborn/player/male.dart';
-import 'package:flutter/material.dart';
 
 class Game extends StatefulWidget {
   const Game({Key? key}) : super(key: key);
@@ -77,14 +77,14 @@ class _GameState extends State<Game>
               sprite: Sprite.load('joystick_attack.png'),
               spritePressed: Sprite.load('joystick_attack_selected.png'),
               size: 80,
-              margin: EdgeInsets.only(bottom: 50, right: 50),
+              margin: const EdgeInsets.only(bottom: 50, right: 50),
             ),
             JoystickAction(
               actionId: 1,
               sprite: Sprite.load('joystick_block.png'),
               spritePressed: Sprite.load('joystick_block_selected.png'),
               size: 50,
-              margin: EdgeInsets.only(bottom: 50, right: 160),
+              margin: const EdgeInsets.only(bottom: 50, right: 160),
             )
           ],
         ),
@@ -95,14 +95,14 @@ class _GameState extends State<Game>
           'tiled/map.json',
           forceTileSize: Size(tileSize, tileSize),
           objectsBuilder: {
-          'key': (p) => DoorKey(p.position),
+            'key': (p) => DoorKey(p.position),
           },
         ),
         interface: PlayerInterface(),
         lightingColorGame: Colors.black.withOpacity(0.6),
         background: BackgroundColorGame(Colors.grey),
         cameraConfig: CameraConfig(moveOnlyMapArea: true),
-        progress: Center(
+        progress: const Center(
           child: Text(
             "Loading...",
             style: TextStyle(

@@ -1,10 +1,10 @@
 // import 'dart:async' as async;
 
 import 'package:bonfire/bonfire.dart';
-import 'package:project_fireborn/main.dart';
 // import 'package:project_fireborn/util/functions.dart';
 // import 'package:project_fireborn/util/game_sprite_sheet.dart';
 import 'package:flutter/material.dart';
+import 'package:project_fireborn/main.dart';
 import 'package:project_fireborn/sprites/female.dart';
 
 class Female extends SimplePlayer with Lighting, ObjectCollision {
@@ -52,7 +52,7 @@ class Female extends SimplePlayer with Lighting, ObjectCollision {
 
   @override
   void joystickChangeDirectional(JoystickDirectionalEvent event) {
-    this.speed = initSpeed * event.intensity;
+    speed = initSpeed * event.intensity;
     super.joystickChangeDirectional(event);
   }
 

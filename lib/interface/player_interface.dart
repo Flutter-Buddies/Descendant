@@ -19,17 +19,15 @@ class PlayerInterface extends GameInterface {
   }
 
   @override
-  void render(Canvas canvas) {
-    try {
-      _drawKey(canvas);
-    } catch (e) {}
-    super.render(canvas);
+  void render(Canvas c) {
+    _drawKey(c);
+    super.render(c);
   }
 
   void _drawKey(Canvas c) {
     if (gameRef.player != null && (gameRef.player as Male).containKey) {
       key.renderFromVector2Rect(
-          c, Rect.fromLTWH(150, 20, 35, 30).toVector2Rect());
+          c, const Rect.fromLTWH(150, 20, 35, 30).toVector2Rect());
     }
   }
 }
