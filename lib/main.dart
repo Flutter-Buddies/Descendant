@@ -4,7 +4,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:project_fireborn/menu.dart';
 
-
 late double tileSize;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,7 +13,7 @@ void main() async {
   }
   // await Sounds.initialize();
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Menu(),
     ),
   );

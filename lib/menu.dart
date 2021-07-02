@@ -1,11 +1,13 @@
 import 'dart:async' as async;
+
 import 'package:bonfire/bonfire.dart';
+import 'package:flutter/material.dart';
 import 'package:project_fireborn/game.dart';
 import 'package:project_fireborn/sprites/male.dart';
-import 'package:flutter/material.dart';
 import 'package:project_fireborn/util/custom_sprite_animation_widget.dart';
 
 class Menu extends StatefulWidget {
+  const Menu({Key? key}) : super(key: key);
   @override
   _MenuState createState() => _MenuState();
 }
@@ -28,7 +30,7 @@ class _MenuState extends State<Menu> {
   @override
   Widget build(BuildContext context) {
     return AnimatedSwitcher(
-      duration: Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 300),
       child: buildMenu(),
     );
   }
@@ -41,12 +43,12 @@ class _MenuState extends State<Menu> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Text(
+            const Text(
               "Project Fireborn",
               style: TextStyle(
                   color: Colors.white, fontFamily: 'Normal', fontSize: 30.0),
             ),
-            SizedBox(
+            const SizedBox(
               height: 34.0,
             ),
             if (sprites.isNotEmpty)
@@ -57,13 +59,13 @@ class _MenuState extends State<Menu> {
                   animation: sprites[currentPosition],
                 ),
               ),
-            SizedBox(
+            const SizedBox(
               height: 34.0,
             ),
             SizedBox(
               width: 150,
               child: ElevatedButton(
-                child: Text(
+                child: const Text(
                   "Um...go?",
                   style: TextStyle(
                     color: Colors.white,
@@ -74,7 +76,7 @@ class _MenuState extends State<Menu> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Game()),
+                    MaterialPageRoute(builder: (context) => const Game()),
                   );
                 },
               ),
@@ -86,7 +88,7 @@ class _MenuState extends State<Menu> {
   }
 
   void startTimer() {
-    _timer = async.Timer.periodic(Duration(seconds: 2), (timer) {
+    _timer = async.Timer.periodic(const Duration(seconds: 2), (timer) {
       setState(() {
         currentPosition++;
         if (currentPosition > sprites.length - 1) {

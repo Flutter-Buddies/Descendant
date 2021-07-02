@@ -1,8 +1,8 @@
 import 'dart:ui';
 
 import 'package:bonfire/bonfire.dart';
-import 'package:project_fireborn/player/male.dart';
 import 'package:flutter/material.dart';
+import 'package:project_fireborn/player/male.dart';
 
 class BarLifeComponent extends InterfaceComponent {
   double padding = 20;
@@ -24,24 +24,22 @@ class BarLifeComponent extends InterfaceComponent {
         );
 
   @override
-  void update(double t) {
-    if (this.gameRef.player != null) {
-      life = this.gameRef.player!.life;
-      maxLife = this.gameRef.player!.maxLife;
-      if (this.gameRef.player is Male) {
-        stamina = (this.gameRef.player as Male).stamina;
+  void update(double dt) {
+    if (gameRef.player != null) {
+      life = gameRef.player!.life;
+      maxLife = gameRef.player!.maxLife;
+      if (gameRef.player is Male) {
+        stamina = (gameRef.player as Male).stamina;
       }
     }
-    super.update(t);
+    super.update(dt);
   }
 
   @override
-  void render(Canvas c) {
-    try {
-      _drawLife(c);
-      _drawStamina(c);
-    } catch (e) {}
-    super.render(c);
+  void render(Canvas canvas) {
+    _drawLife(canvas);
+    _drawStamina(canvas);
+    super.render(canvas);
   }
 
   void _drawLife(Canvas canvas) {

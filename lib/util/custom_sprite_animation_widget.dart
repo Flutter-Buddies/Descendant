@@ -11,7 +11,7 @@ class CustomSpriteAnimationWidget extends StatelessWidget {
     return FutureBuilder(
       future: animation,
       builder: (context, data) {
-        if (!data.hasData) return SizedBox.shrink();
+        if (!data.hasData) return const SizedBox.shrink();
         return SpriteAnimationWidget(
           animation: data.data as SpriteAnimation,
         );

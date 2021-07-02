@@ -12,9 +12,9 @@ class DoorKey extends GameDecoration with Sensor {
         );
 
   @override
-  void onContact(GameComponent collision) {
-    if (collision is Male) {
-      collision.containKey = true;
+  void onContact(GameComponent component) {
+    if (component is Male) {
+      component.containKey = true;
       remove();
     }
   }
